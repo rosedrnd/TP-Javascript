@@ -50,11 +50,12 @@ window.onload = function () {
       } 
     console.log(getRandomText()); 
     for (let i = 1; i <= 52; i++) {
-        let imgRoi = document.querySelector('.img' + i);
-        imgRoi.addEventListener('click', function (e) {
-            imgRoi.setAttribute('src', getRandomColor()+getRandomText());
-            console.log(imgRoi)
+        let imgClick = document.querySelector('.img' + i);
+        imgClick.addEventListener('click', function (e) {
+            imgClick.setAttribute('src', getRandomColor()+getRandomText());
+            console.log(imgClick)
         });
-       
     }
+    imgClick.addEventListener('click', function (e) {
+    });
 }
